@@ -29,15 +29,24 @@ enum types {
     OVERDRESS = 4,
     NORMAL_UNIT = 5,
     TRIGGER_UNIT = 6,
-    
+    NORMAL_ORDER = 7,
+    BLITZ_ORDER = 8,
+    TRIGGER_ORDER = 9,
+    SET_ORDER = 10
 };
 
 enum skillIcons {
-
+    BOOST = 1,
+    INTERCEPT = 2,
+    TWIN_DRIVE = 3,
+    TRIPLE_DRIVE = 4
 };
 
 enum specialIcons {
-
+    FORCE = 1,
+    ACCEL = 2,
+    PROTECT = 3,
+    PERSONA = 4,
 };
 
 enum nations {

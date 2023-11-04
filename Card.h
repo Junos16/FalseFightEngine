@@ -1,7 +1,8 @@
 #include <vector>
 #include <string>
-#include "Types.h"
-#include "Effects.h"
+#include "Enums.h"
+#include "Effect.h"
+#include "Player.h"
 
 struct card_information {
     std::string name;
@@ -13,13 +14,14 @@ struct card_information {
     int critical;
     triggerIcons triggerIcon;
     types mainType;
-    types subTypes;
-    types specialTypes;
+    types subType;
+    types specialType;
     skillIcons skillIcon;
-    Effect cardText;
+    std::vector<Effect> cardText;
     specialIcons specialIcon;
     int drive;
 };
+
 struct card_state {
     bool isHidden;
     bool isRest;
@@ -27,6 +29,7 @@ struct card_state {
     Player* owner;
     Player* master;
 };
+
 class Card {
     private:
         card_information base_information;

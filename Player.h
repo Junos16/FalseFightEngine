@@ -1,4 +1,4 @@
-#include "Zone.h"
+class Zone;
 
 class Player {
     private:

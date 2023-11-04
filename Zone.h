@@ -2,7 +2,9 @@
 #include <vector>
 #include <deque>
 #include <stack>
-#include "Card.h"
+
+class Card;
+class Player;
 
 class Zone {
     private:
@@ -24,14 +26,14 @@ class Vector_Zone: private Zone {
 
 class Stack_Zone: private Zone {
     private:
-        std::Stack<Card*> 
-}
+        std::stack<Card*> ;
+};
 
 struct Field {
     Vanguard_Circle vanguard_circle;
     std::vector<Rearguard_Circle> rearguards;
     Guardian_Circle guardian_circle;
-    
+
 
 };
 
@@ -51,9 +53,11 @@ class Rearguard_Circle: private Zone {
         Card* marker;
 
         bool isLocked;
-        bool isFrontRow;
-        bool isLeft;
         bool isExtra;
+        bool isStage;
+        bool isAstralPlane;
+
+
 
         Vector_Zone gauge_zone;
 

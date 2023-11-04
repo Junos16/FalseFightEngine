@@ -2,7 +2,8 @@
 #include <string>
 #include "Enums.h"
 #include "Effect.h"
-#include "Player.h"
+
+class Player;
 
 struct card_information {
     std::string name;

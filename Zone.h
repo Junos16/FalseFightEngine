@@ -26,7 +26,7 @@ class Vector_Zone: private Zone {
 
 class Stack_Zone: private Zone {
     private:
-        std::stack<Card*> ;
+        std::stack<Card*> cardStack;
 };
 
 struct Field {
@@ -49,7 +49,7 @@ class Vanguard_Circle: private Zone {
 class Rearguard_Circle: private Zone {
     private:
         Card* rearguard;
-        Card* overdress;
+        Card* originalDress;
         Card* marker;
 
         bool isLocked;
@@ -57,7 +57,7 @@ class Rearguard_Circle: private Zone {
         bool isStage;
         bool isAstralPlane;
 
-
+        // logic for rc position
 
         Vector_Zone gauge_zone;
 

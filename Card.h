@@ -2,7 +2,9 @@
 #include <string>
 #include "Enums.h"
 #include "Effect.h"
-#include "Player.h"
+
+class Player;
+class Zone;
 
 struct card_information {
     std::string name;
@@ -28,6 +30,7 @@ struct card_state {
     bool isFaceDown;
     Player* owner;
     Player* master;
+    Zone* curren_location;
 };
 
 class Card {
@@ -39,6 +42,9 @@ class Card {
         card_state current_state;
 
     public:
-
-        
+        void move_card(Zone* target_zone);
+        void rest_card();
+        void flip_card();
+        void set_owner(Player* new_owner);
+        void set_master(Player* new_master);
 };

@@ -8,19 +8,19 @@ class Zone;
 
 struct card_information {
     std::string name;
-    clans clan;
-    races race;
+    Clans clan;
+    Races race;
     int grade;
     int power;
     int shield;
     int critical;
-    triggerIcons triggerIcon;
-    types mainType;
-    types subType;
-    types specialType;
-    skillIcons skillIcon;
+    TriggerIcons triggerIcon;
+    Types mainType;
+    Types subType;
+    Types specialType;
+    SkillIcons skillIcon;
     std::vector<Effect> cardText;
-    specialIcons specialIcon;
+    SpecialIcons specialIcon;
     int drive;
 };
 

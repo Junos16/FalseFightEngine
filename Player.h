@@ -21,4 +21,18 @@ class Player {
         Vector_Zone g_zone;
         Vector_Zone order_zone;
         Card* ride_deck[4];
+
+    public:
+        void normal_call();
+        void normal_ride();
+        void normal_stride();
+        void discard();
+        void retire();
+        void move_rearguard();
+        void persona_ride();
+        void search();
+        void shuffle();
+        void declare();
+        void counter_blast();
+        void 
 };

@@ -1,4 +1,4 @@
-enum clans {
+enum Clans {
     ANGEL_FEATHER = 1,
     ANIMATION = 2,
     AQUA_FORCE = 3,
@@ -14,15 +14,15 @@ enum clans {
     GRANBLUE = 13,
 };
 
-enum races {
+enum Races {
 
 };
 
-enum triggerIcons {
+enum TriggerIcons {
 
 };
 
-enum types {
+enum Types {
     UNIT = 1,
     G = 2,
     HEART = 3,
@@ -35,21 +35,21 @@ enum types {
     SET_ORDER = 10
 };
 
-enum skillIcons {
+enum SkillIcons {
     BOOST = 1,
     INTERCEPT = 2,
     TWIN_DRIVE = 3,
     TRIPLE_DRIVE = 4
 };
 
-enum specialIcons {
+enum SpecialIcons {
     FORCE = 1,
     ACCEL = 2,
     PROTECT = 3,
     PERSONA = 4,
 };
 
-enum nations {
+enum Nations {
     UNITED_SANCTUARY = 1,
     DRAGON_EMPTIRE = 2,
     DARK_ZONE = 3,
@@ -64,8 +64,20 @@ enum nations {
     LYRICAL_MONASTERIO = 12,
 };
 
-enum effectTypes {
+enum EffectTypes {
     ACT = 1,
     AUTO = 2,
     CONT = 3
+};
+
+enum World {
+
+};
+
+enum Keywords {
+
+};
+
+enum Restriction {
+
 };

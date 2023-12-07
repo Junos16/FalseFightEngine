@@ -54,6 +54,11 @@ class Player {
         Card* ride_deck[4];
 
     public:
+        Player();
+
+        void setFirst(bool);
+        bool checkFirst();
+
         void stand_up_vanguard();
 
         void normal_draw();

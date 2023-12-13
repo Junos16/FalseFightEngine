@@ -15,14 +15,20 @@ enum Clans {
 };
 
 enum Races {
-
+    ANGEL = 1
 };
 
 enum TriggerIcons {
-
+    NONE = 0,
+    CRITICAL = 1,
+    DRAW = 2,
+    FRONT = 3,
+    HEAL = 4,
+    STAND = 5
 };
 
 enum Types {
+    NONE = 0,
     UNIT = 1,
     G = 2,
     HEART = 3,
@@ -43,6 +49,7 @@ enum SkillIcons {
 };
 
 enum SpecialIcons {
+    NONE = 0,
     FORCE = 1,
     ACCEL = 2,
     PROTECT = 3,

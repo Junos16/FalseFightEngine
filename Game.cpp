@@ -48,8 +48,6 @@ Game::Game() {
         went_second_player = player1;
         went_second_player->setFirst(false);
     }
-
-
 }
 
 void Game::gameLoop() {

@@ -1,7 +1,7 @@
 #include <vector>
 #include <string>
 #include "Enums.h"
-#include "Effect.h"
+//#include "Effect.h"
 
 class Player;
 class Zone;
@@ -19,7 +19,8 @@ struct card_information {
     Types subType;
     Types specialType;
     SkillIcons skillIcon;
-    std::vector<Effect> cardText;
+    //std::vector<Effect> cardText;
+    std::string cardText;
     SpecialIcons specialIcon;
     int drive;
 };
